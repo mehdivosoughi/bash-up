@@ -25,7 +25,7 @@ do
   output+="${green}$(($i + 1))${end} ${delimiter} "${arr[$i]}" ${delimiter} "${path}" ${delimiter} $1\n"
 done
 
-echo -e ${output} | column -t -s${delimiter} -o '  '
+echo -e ${output} | column -t -s${delimiter}
 
 printf "Enter process number to ${red}kill${end}: (or 'a' to kill all)"
 read index
